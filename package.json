@@ -2,6 +2,7 @@
   "name": "solution_albums-frontend",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://e-commerce-apple-product-api.onrender.com",
   "dependencies": {
     "@cloudinary/react": "^1.4.1",
     "@cloudinary/url-gen": "^1.8.0",
@@ -23,7 +24,7 @@
     "redux": "^4.2.0",
     "web-vitals": "^2.1.4"
   },
-  "proxy": "https://e-commerce-apple-product-api.onrender.com",
+ 
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
