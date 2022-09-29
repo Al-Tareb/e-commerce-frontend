@@ -1,0 +1,254 @@
+
+  
+  .about{
+    width: 100%;
+    padding: 10px 0px;
+    margin-top: 130px;
+  }
+  .about img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+  }
+  .about-text{
+    width: 550px;
+  }
+  .main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .about-button{
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    margin-left: 22%;
+    transition: all .7s ease;
+  }
+  .about-button:hover{
+    color: rgb(100, 100, 100);
+  }
+
+  .about-text h2{
+    color: #000;
+    font-size: 4rem;
+    font-family: 'Uchen', serif;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+
+  .about-text h2 span{
+    color: var(--main-color);
+    font-size: 4rem;
+    font-family: 'Uchen', serif;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  .about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+  }
+  .about-text p{
+    letter-spacing: 1px;
+    line-height: 28px;
+    text-align: justify;
+    font-size: 2rem;
+    margin-bottom: 45px;
+  }
+   .button-link{
+    font-size: 1.2rem;
+    z-index: 2;
+    position: absolute;
+    margin-left: -70px;
+    padding: .5em 2rem;
+    color: var(--white-color);
+    border: none;
+    background-color:black;
+  cursor: pointer;
+  overflow-x: hidden;
+  border-radius: 7px;
+  text-decoration: none;
+  transition: all .7s ease;
+  }
+
+.button-link:hover{
+   color: var(--darkgrey-color);
+}
+  
+  .service{
+    width: 100%;
+    padding: 100px 0px;
+    margin-bottom: 120px;
+  }
+  .title h2{
+    font-size: 4rem;
+    font-family: 'Uchen', serif;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  .title h2 span {
+    color: var(--main-color);
+  }
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 400px; */
+  }
+  .card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: white;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 1px 2px 5px 3px rgba(94, 104, 121, 0.3);
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: black;
+  
+  }
+  h5{
+    color: black;
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  .pra p{
+    color: black;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+  }
+  .card .button{
+    background-color:var(--main-color);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s; 
+  }
+  .card .button:hover{
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    cursor: pointer;
+  }
+
+
+   
+  @media only screen and (max-width: 1250px) {
+
+
+    .about-text h2{
+      
+      font-size: 2rem;
+      margin-bottom: 0;
+      
+    }
+  
+    .about-text h2 span{
+      color: var(--main-color);
+      font-size: 2rem;
+      font-family: 'Uchen', serif;
+      text-transform: capitalize;
+      margin-bottom: 0;
+    }
+    .about-text h5{
+      
+      font-size: 1rem;
+    
+    }
+    .about-text p{
+     
+      font-size: 1.5rem;
+     
+    }
+    .about img{
+      height: 320px;
+      width: 320px;
+      margin-bottom: 50px;
+     
+    }
+    .about-button{
+     
+      font-size: .9rem;
+      margin-left: 35%;
+     
+    }
+
+
+  .service{
+    padding: 40px 0px;
+  }
+  .title h2{
+    font-size: 2rem;
+    width: 330px;
+  
+  }
+
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  
+  }
+  
+  .card{
+   
+    height: 365px;
+    width: 80%;
+    padding: 20px 35px;
+    background: white;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 1px 2px 5px 3px rgba(94, 104, 121, 0.3);
+    border-radius: 20px;
+    margin: 15px;
+  }
+  .card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: black;
+  
+  }
+  h5{
+    color: black;
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  }

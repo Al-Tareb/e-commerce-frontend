@@ -1,0 +1,600 @@
+
+
+
+article {
+    width: 60%;
+    margin: auto;
+  }
+  .shopping-cart-header{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2rem;
+    color: green;
+  }
+  .shopping-cart-header-hide{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2rem;
+    color: green;
+  }
+ .cart-title{
+  font-family: 'Cormorant Garamond', serif;
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 10px;
+  border-bottom: 2px solid var(--grey-color);
+
+ }
+ .cart-title-quantity{
+  padding-left: 0px;
+ }
+ .cart-title-price{
+  padding-left: 270px;
+ }
+  .cart_box img {
+    width: 90px;
+    height: 100px;
+    border: 1px solid var(--grey-color);
+    padding: 10px 1px;
+    border-radius: 7px;
+  }
+  .cart_img {
+    display: flex;
+    width: 400px;
+  
+  }
+  
+  .cart_img p {
+    
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .cart-product-name{
+    font-weight: bold;
+  }
+  .cart_img .img-desc{
+    display: block;
+
+  }
+  .cart-product-price{
+    font-weight: bold;
+  }
+  .cart_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom: 1px solid var(--grey-color);
+    padding-bottom: 10px;
+  }
+  .cart-quantity{
+    border: 1px solid var(--gainsboro-color);
+    width: 100px;
+    text-align: center;
+    padding: 7px 1px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin-top: 5px;
+    transition: all .7s ease;
+  }
+
+.cart-quantity:hover{
+background-color: #d3d3d3;
+}
+  .cart-quantity span{
+    font-size: 1.2rem;
+    margin: 0px 5px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .cart_box div:nth-child(2) button {
+    padding: 5px 10px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .total-price button{
+    padding: 8px 15px;
+    font-weight: bold;
+    font-size: .5rem;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--gainsboro-color);
+    color: var(--black-color);
+    transition: all .7s ease;
+  }
+  .total-price button:hover{
+    background-color: #cc0000;
+    color: green;
+  }
+  
+  .total-price span{
+    color: blue;
+    /* color: var(--white-color); */
+
+    display: inline-block;
+    width: 80px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  .sub-total {
+    /* display: flex;
+    justify-content: space-between; */
+    margin-left: 77%;
+  }
+  
+  .sub-total-title{
+    font-size: 1.6rem;
+    color: var(--main-color);
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Uchen', serif;
+  }
+  .sub-total-price{
+    font-size: 1.5rem;
+    /* background-color: var(--lime1-color); */
+    color: green;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  .clear-cart-button{
+    border: none;
+    width: 170px;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 5px;
+    background-color: #cc0000;
+    margin-top: -50px;
+    color: var(--white-color);
+    font-size: 1.3rem;
+    transition: all 1s ease;
+   
+  }
+  .clear-cart-button:hover{
+    background-color: #ff3333;
+    color: #acacac;
+  }
+
+  @media only screen and (max-width: 1150px) {
+    article {
+      width: 90%;
+      margin: auto;
+    }
+
+    .cart-title{
+      
+      
+      
+      width: 83%;
+      margin: auto;
+      margin-top: 30px;
+     
+      }
+
+
+     .cart_box {
+    
+     
+      width: 80%;
+      margin: auto;
+      margin-top: 30px;
+      
+      }
+
+  }
+  @media only screen and (max-width: 960px) {
+    article {
+      width: 100%;
+      margin: auto;
+    }
+
+    .cart-title{
+      
+      
+      
+      width: 93%;
+      margin: auto;
+      margin-top: 30px;
+     
+      }
+
+
+     .cart_box {
+    
+     
+      width: 90%;
+      margin: auto;
+      margin-top: 30px;
+      
+      }
+
+
+      .sub-total {
+        margin-left: 75%;
+        margin-top: 5px;
+      }
+      
+      .sub-total-title{
+        font-size: 1.2rem;
+      }
+      .sub-total-price{
+        font-size: 1.2rem;
+      }
+    
+      .clear-cart-button{
+        border: none;
+        width: 160px;
+        text-align: center;
+        padding: 10px 5px;
+        border-radius: 5px;
+        background-color: #cc0000;
+        margin-top: -50px;
+        margin-left: 50px;
+        color: var(--white-color);
+        font-size: 1rem;
+        transition: all 1s ease;
+       
+      }
+
+
+  }
+
+  @media only screen and (max-width: 750px) {
+
+
+    article {
+      width: 90%;
+    }
+    .shopping-cart-header{
+      
+      font-size: 1.3rem;
+      margin-top: 0px;
+      transition: all .4s ease;
+    }
+    
+    
+    .shopping-cart-header-hide{
+      font-size: 1.3rem;
+      margin-top: 200px;
+      transition: all .4s ease;
+    }
+    
+    
+    
+    
+    
+    
+    .cart-title{
+      
+    font-size: .7rem;
+    
+    width: 93%;
+    margin: auto;
+    margin-top: 20px;
+    }
+    .cart-title-quantity{
+      padding-right: 10px;
+     }
+     .cart-title-price{
+      padding-left: 60px;
+     }
+
+
+
+     .cart_box {
+    
+     
+    width: 90%;
+    margin:auto;
+    margin-top: 20px;
+    }
+
+
+
+      .cart_box img {
+        width: 60px;
+        height: 70px;
+        padding: 5px 1px;
+        border-radius: 3px;
+      }
+      .cart_img {
+        display: flex;
+        width: 180px;
+      
+      }
+    
+      .cart_img .img-desc{
+       
+        width: 140px;
+        margin-top: 60px;
+        margin-left: -60px;
+        font-size: .8rem;
+    
+      }
+      .cart-product-price{
+        font-weight: 400;
+        margin-top: -100px;
+        margin-right: 30px;
+        font-size: .9rem;
+      }
+      
+      .cart-quantity{
+        border: 1px solid var(--gainsboro-color);
+        width: 70px;
+        padding: 5px 1px;
+        margin-top: -100px;
+      }
+      .cart-quantity span{
+        font-size: .8rem;
+      }
+    .total-price{
+      margin-top: -100px;
+      margin-left: 30px;
+      width: 100px;
+      display: flex;
+    }
+      .total-price button{
+        
+        font-weight: bold;
+        font-size: .5rem;
+       
+        width: 40px;
+      
+        height: 35px;
+        
+        margin-left: 0px;
+       margin-top: 17px;
+        border-radius: 5px;
+        border: none;
+        background-color: var(--gainsboro-color);
+        color: var(--black-color);
+        transition: all .7s ease;
+      }
+    
+      .total-price button:hover{
+        background-color: #cc0000;
+        color: green;
+      }
+      .trash-icon{
+        width: 12px;
+        padding-bottom: 10px;
+    
+      }
+      .total-price-span{
+        color: blue;
+       
+        display: inline-block;
+        width: 40px;
+        border-radius: 5px;
+        margin-right: 0px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: .9rem;
+        margin-top: 15px ;
+      }
+      .total-price span{
+        color: blue;
+        /* color: var(--white-color); */
+    
+        display: inline-block;
+        width: 80px;
+        padding: 10px 0px;
+        border-radius: 5px;
+        margin-right: 0px;
+        font-weight: bold;
+      }
+    
+    
+      .sub-total {
+        margin-left: 60%;
+        margin-top: 5px;
+      }
+      
+      .sub-total-title{
+        font-size: 1rem;
+      }
+      .sub-total-price{
+        font-size: 1rem;
+      }
+    
+      .clear-cart-button{
+        border: none;
+        width: 120px;
+        text-align: center;
+        padding: 10px 5px;
+        border-radius: 5px;
+        background-color: #cc0000;
+        margin-top: -50px;
+        color: var(--white-color);
+        font-size: .9rem;
+        transition: all 1s ease;
+       
+      }
+      .clear-cart-button:hover{
+        background-color: #ff3333;
+        color: #acacac;
+      }
+    
+      }
+
+
+  @media only screen and (max-width: 540px) {
+
+
+article {
+  width: 100%;
+  height: 90vh;
+}
+.shopping-cart-header{
+  
+  font-size: 1.3rem;
+  margin-top: 30px;
+  transition: all .4s ease;
+}
+
+
+.shopping-cart-header-hide{
+  font-size: 1.3rem;
+  margin-top: 330px;
+  transition: all .4s ease;
+}
+
+
+
+
+.cart_box{
+ width: 98%;
+}
+
+.cart-title{
+  
+font-size: .7rem;
+margin-top: 20px;
+}
+.cart-title-quantity{
+  padding-left: 10%;
+ }
+ .cart-title-price{
+  /* padding-left: 60px; */
+  display: none;
+ }
+  .cart_box img {
+    width: 60px;
+    height: 70px;
+    padding: 5px 1px;
+    border-radius: 3px;
+  }
+  .cart_img {
+    display: flex;
+    width: 180px;
+  
+  }
+.cart_box .cart-product-name{
+  font-size: 1rem;
+}
+  .cart_img .img-desc{
+   
+    width: 140px;
+    margin-top: 60px;
+    margin-left: -60px;
+    font-size: .8rem;
+
+  }
+  .cart-product-price{
+    /* font-weight: 400;
+    margin-top: -100px;
+    margin-right: 30px;
+    font-size: .9rem; */
+    display: none;
+  }
+  
+  .cart-quantity{
+    border: 1px solid var(--gainsboro-color);
+    width: 80px;
+    padding: 5px 5px;
+    margin-top: -100px;
+    margin-left: 10px;
+  }
+  .cart-quantity span{
+    font-size: .8rem;
+  }
+.total-price{
+  margin-top: -100px;
+  margin-left: 30px;
+  width: 100px;
+  display: flex;
+}
+  .total-price button{
+    
+    font-weight: bold;
+    font-size: .5rem;
+   
+    width: 50px;
+  
+    height: 35px;
+    
+    margin-left: 0px;
+   margin-top: 17px;
+    border-radius: 5px;
+    margin-right: 5px;
+    border: none;
+    background-color: var(--gainsboro-color);
+    color: var(--black-color);
+    transition: all .7s ease;
+  }
+
+  .total-price button:hover{
+    background-color: #cc0000;
+    color: green;
+  }
+  .trash-icon{
+    width: 12px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+
+  }
+  .total-price-span{
+    color: blue;
+   
+    display: inline-block;
+    width: 40px;
+    border-radius: 5px;
+    margin-right: 0px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: .9rem;
+    margin-top: 15px ;
+  }
+  .total-price span{
+    color: blue;
+    /* color: var(--white-color); */
+
+    display: inline-block;
+    width: 80px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    margin-right: 0px;
+    font-weight: bold;
+  }
+
+
+  .sub-total {
+    margin-left: 45%;
+    margin-top: 5px;
+  }
+  
+  .sub-total-title{
+    font-size: 1rem;
+  }
+  .sub-total-price{
+    font-size: 1rem;
+  }
+
+  .clear-cart-button{
+    border: none;
+    width: 120px;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 5px;
+    background-color: #cc0000;
+    margin-top: -50px;
+    color: var(--white-color);
+    font-size: .9rem;
+    transition: all 1s ease;
+   
+  }
+  .clear-cart-button:hover{
+    background-color: #ff3333;
+    color: #acacac;
+  }
+
+  }
