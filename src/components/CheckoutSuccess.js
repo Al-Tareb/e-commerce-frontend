@@ -16,8 +16,8 @@ const CheckoutSuccess = ({cart, open, setOpen, currentCustomerId,setCart }) => {
                     credentials: "include"
                 }  
                   
-                // const response = await fetch(process.env.REACT_APP_SERVER_URL + `/customers/${currentCustomerId}`, settings);
-                const response = await fetch(`https://e-commerce-apple-product-api.onrender.com/customers/${currentCustomerId}`, settings);
+                const response = await fetch(process.env.REACT_APP_SERVER_URL + `/customers/${currentCustomerId}`, settings);
+                 //const response = await fetch(`https://e-commerce-apple-product-api.onrender.com/customers/${currentCustomerId}`, settings);
                 const parsedRes = await response.json();            
                 try {
                     if (response.ok) {
@@ -45,8 +45,8 @@ useEffect(() => {
           credentials: "include"
       }  
         
-    //   const response = await fetch(process.env.REACT_APP_SERVER_URL + `/order`, settings);
-    const response = await fetch(`https://e-commerce-apple-product-api.onrender.com/order`, settings);
+       const response = await fetch(process.env.REACT_APP_SERVER_URL + `/order`, settings);
+    //const response = await fetch(`https://e-commerce-apple-product-api.onrender.com/order`, settings);
       const parsedRes = await response.json();            
       try {
           if (response.ok) {

@@ -38,8 +38,8 @@ const Register = props => {
       credentials: "include"
     }
     
-    const response = await fetch("https://e-commerce-apple-product-api.onrender.com/register", settings);
-    //const response = await fetch(process.env.REACT_APP_SERVER_URL + "/register", settings);
+    //const response = await fetch("https://e-commerce-apple-product-api.onrender.com/register", settings);
+    const response = await fetch(process.env.REACT_APP_SERVER_URL + "/register", settings);
     const parsedRes = await response.json();
 
     try {
