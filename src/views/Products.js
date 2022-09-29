@@ -54,6 +54,7 @@ useEffect(  ()=>{
             }
             const response = await fetch(process.env.REACT_APP_SERVER_URL + `/products`, settings);
             //const response = await fetch(`https://e-commerce-apple-product-api.onrender.com/products`, settings);
+            //jhkjhlkjölkjlö
                 const parsedRes = await response.json();
                 try {
                     if (response.ok) {
