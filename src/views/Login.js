@@ -15,7 +15,9 @@ const Login = props => {
         const settings = {                
             credentials: "include"
         }
-        const response = await fetch(process.env.REACT_APP_SERVER_URL + `/login`, settings);
+        
+        //const response = await fetch(process.env.REACT_APP_SERVER_URL + `/login`, settings);
+        const response = await fetch(`https://e-commerce-apple-product-api.onrender.com/login`, settings);
             const parsedRes = await response.json();
             try {
                 if (response.ok) {
@@ -67,7 +69,9 @@ const Login = props => {
       credentials: "include"
     }
 
-    const response = await fetch(process.env.REACT_APP_SERVER_URL + "/login", settings);
+    
+    //const response = await fetch(process.env.REACT_APP_SERVER_URL + "/login", settings);
+    const response = await fetch("https://e-commerce-apple-product-api.onrender.com/login", settings);
     const parsedRes = await response.json();
 
     try {

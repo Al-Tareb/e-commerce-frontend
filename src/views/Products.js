@@ -27,7 +27,9 @@ const Products = props => {
                 const settings = {
                     credentials: "include"
                 }    
-                const response = await fetch(process.env.REACT_APP_SERVER_URL + `/customers/${props.currentCustomerId}`, settings);
+                // https://e-commerce-apple-product-api.onrender.com
+               // const response = await fetch(process.env.REACT_APP_SERVER_URL + `/customers/${props.currentCustomerId}`, settings);
+                const response = await fetch(`https://e-commerce-apple-product-api.onrender.com/customers/${props.currentCustomerId}`, settings);
                 const parsedRes = await response.json();            
                 try {
                     if (response.ok) {
@@ -50,7 +52,8 @@ useEffect(  ()=>{
             const settings = {                
                 credentials: "include"
             }
-            const response = await fetch(process.env.REACT_APP_SERVER_URL + `/products`, settings);
+            //const response = await fetch(process.env.REACT_APP_SERVER_URL + `/products`, settings);
+            const response = await fetch(`https://e-commerce-apple-product-api.onrender.com/products`, settings);
                 const parsedRes = await response.json();
                 try {
                     if (response.ok) {
@@ -76,7 +79,8 @@ useEffect(  ()=>{
             const settings = {                
                 credentials: "include"
             }
-            const response = await fetch(process.env.REACT_APP_SERVER_URL + `/products`, settings);
+            //const response = await fetch(process.env.REACT_APP_SERVER_URL + `/products`, settings);
+            const response = await fetch(`https://e-commerce-apple-product-api.onrender.com/products`, settings);
                 const parsedRes = await response.json();
                 try {
                     if (response.ok) {
@@ -152,8 +156,8 @@ setFileInputState('');
 
 const uploadImage = async (base64EncodedImage)=>{
    
-
-        const response =  await fetch(process.env.REACT_APP_SERVER_URL + "/products", {
+        //const response =  await fetch(process.env.REACT_APP_SERVER_URL + "/products", {
+        const response =  await fetch("https://e-commerce-apple-product-api.onrender.com/products", {
             method: "POST",
             body: JSON.stringify({productName, price, productDescription, brand, data: base64EncodedImage}),
             headers: { 'Content-Type': 'application/json'},
@@ -211,7 +215,9 @@ const previewFiles=(file)=>{
     const settings = {
         method: "DELETE"
     }
-        const response = await fetch(process.env.REACT_APP_SERVER_URL + `/products/${productId}`, settings);
+    
+        //const response = await fetch(process.env.REACT_APP_SERVER_URL + `/products/${productId}`, settings);
+        const response = await fetch(`https://e-commerce-apple-product-api.onrender.com/products/${productId}`, settings);
         const parsedRes = await response.json();
         try {
             if (response.ok) {
